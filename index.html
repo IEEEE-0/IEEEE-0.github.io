@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-dark">
+<head>
+  <script>
+    (function() {
+      var t = localStorage.getItem('ieeee-theme');
+      document.documentElement.className = t === 'light' ? 'theme-light' : 'theme-dark';
+    })();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IEEEE - Institute of Embarrassing Engineering Experiments and Essays">
+  <title>IEEEE — Institute of Embarrassing Engineering Experiments and Essays</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-3d" aria-hidden="true">
+    <div class="bg-aurora" id="bg-aurora">
+      <div class="aurora-layer aurora-layer--1" id="aurora-1"></div>
+      <div class="aurora-layer aurora-layer--2" id="aurora-2"></div>
+      <div class="aurora-layer aurora-layer--3" id="aurora-3"></div>
+    </div>
+    <div class="bg-stars" id="bg-stars"></div>
+    <div class="bg-3d-orb bg-3d-orb--1"></div>
+    <div class="bg-3d-orb bg-3d-orb--2"></div>
+    <div class="bg-3d-orb bg-3d-orb--3"></div>
+  </div>
+  <div class="click-feedback-container" id="click-feedback-container" aria-hidden="true"></div>
+  <header class="site-header" id="header">
+    <div class="header-inner">
+      <a href="#hero" class="logo">
+        <img src="pic1.jpg" alt="IEEEE — Institute of Embarrassing Engineering Experiments and Essays" class="logo-img" width="120" height="120">
+        <span class="logo-fallback">IEEEE</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#people">People</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="theme-switch" role="group" aria-label="Theme">
+          <button type="button" class="theme-btn" data-theme="dark" aria-pressed="true" aria-label="Dark mode">
+            <span class="theme-icon theme-icon-dark" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="theme-btn" data-theme="light" aria-pressed="false" aria-label="Light mode">
+            <span class="theme-icon theme-icon-light" aria-hidden="true"></span>
+          </button>
+        </div>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <div class="hero-grid"></div>
+        <div class="hero-glow"></div>
+      </div>
+      <div class="hero-container">
+        <div class="hero-inner">
+          <p class="hero-label"><span class="mono">EST. 2026</span></p>
+        <h1 class="hero-title">
+          <span class="line">Institute of</span>
+          <span class="line accent">Embarrassing Engineering</span>
+          <span class="line">Experiments and Essays</span>
+        </h1>
+        <p class="hero-tagline">Where failed experiments and honest essays become research.</p>
+        <div class="hero-cta">
+          <a href="#about" class="btn btn-primary">Explore</a>
+          <a href="#research" class="btn btn-ghost">Research</a>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="about">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num mono">01</span>
+          <h2 class="section-title">About</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-main">
+            <p class="lead">IEEEE is an institute dedicated to the honest documentation of engineering experiments that don’t go as planned—and the essays that make sense of them.</p>
+            <p>We believe that the most instructive research often comes from the margins: failed replications, unexpected bugs, and “embarrassing” results that traditional venues seldom publish. Our mission is to give these outcomes a home and to turn them into reusable knowledge.</p>
+            <p>Whether you’re reading our essays or submitting your own embarrassing experiment, you’re part of a community that values transparency and learning over polish.</p>
+          </div>
+          <aside class="about-side">
+            <div class="stat">
+              <span class="stat-value mono">∞</span>
+              <span class="stat-label">Experiments documented</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value mono">0</span>
+              <span class="stat-label">Embarrassment threshold</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="research">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num mono">02</span>
+          <h2 class="section-title">Research Areas</h2>
+        </div>
+        <ul class="research-list">
+          <li class="research-card">
+            <span class="research-icon mono">[E]</span>
+            <h3>Embarrassing Experiments</h3>
+            <p>Rigorous documentation of experiments that failed, backfired, or yielded “wrong” but informative results. Replication packages and post-mortems included.</p>
+          </li>
+          <li class="research-card">
+            <span class="research-icon mono">[S]</span>
+            <h3>Essays & Reflections</h3>
+            <p>Long-form essays on engineering practice, research culture, and the value of publishing negative or messy results. No paywall, no polish requirement.</p>
+          </li>
+          <li class="research-card">
+            <span class="research-icon mono">[O]</span>
+            <h3>Open Artifacts</h3>
+            <p>Code, datasets, and lab notebooks from our experiments. Everything we can share, we do—including the parts we’re not proud of.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section reveal" id="people">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num mono">03</span>
+          <h2 class="section-title">People</h2>
+        </div>
+        <p class="section-intro">IEEEE is run by researchers and practitioners who believe in open, honest engineering scholarship. Core contributors will be listed here as the institute grows.</p>
+        <div class="people-placeholder">
+          <p class="mono">Contributors · Coming soon</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="publications">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num mono">04</span>
+          <h2 class="section-title">Publications & Essays</h2>
+        </div>
+        <p class="section-intro">Peer-reviewed essays and experiment reports. New entries are added as they are accepted and typeset.</p>
+        <article class="pub-featured">
+          <a href="#" class="pub-cover-link" aria-label="IDIOT ENGINEERING, Volume 1 Issue 1">
+            <img src="pic2.jpg" alt="IDIOT ENGINEERING — Volume 1, Issue 1, Spring 2026" class="pub-cover-img" width="280" height="360">
+          </a>
+          <div class="pub-featured-body">
+            <p class="pub-featured-label mono">Inaugural journal</p>
+            <h3 class="pub-featured-title">IDIOT ENGINEERING</h3>
+            <p class="pub-featured-tagline">Where great minds make even greater mistakes.</p>
+            <p class="pub-meta">Volume 1, Issue 1 · Spring 2026</p>
+            <p>First journal of the Institute. Essays and experiment reports on embarrassing engineering—rigorous documentation of what went wrong and why it matters.</p>
+          </div>
+        </article>
+        <ul class="pub-list">
+          <li class="pub-item">
+            <span class="pub-year mono">2026</span>
+            <div class="pub-content">
+              <h3>Welcome to IEEEE</h3>
+              <p class="pub-meta">Inaugural essay · Institute</p>
+              <p>An introduction to the institute, its mission, and how to submit your own embarrassing experiments and essays.</p>
+            </div>
+          </li>
+          <li class="pub-item placeholder">
+            <span class="pub-year mono">—</span>
+            <div class="pub-content">
+              <h3>More to come</h3>
+              <p>We are actively soliciting submissions. If you have an experiment or essay that fits our scope, get in touch.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section reveal" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num mono">05</span>
+          <h2 class="section-title">Contact</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-block">
+            <h3>Submissions</h3>
+            <p>We welcome preprints, experiment reports, and essay drafts. Send a short abstract and link to your manuscript or repo.</p>
+            <a href="mailto:submissions@ieeee.org" class="link mono">ieeee_official@163.com</a>
+          </div>
+          <div class="contact-block">
+            <h3>General inquiries</h3>
+            <p>Collaboration, media, or general questions about the institute.</p>
+            <a href="mailto:contact@ieeee.org" class="link mono">ieeee_official@163.com</a>
+          </div>
+          <div class="contact-block">
+            <h3>GitHub</h3>
+            <p>Source code, datasets, and project repos.</p>
+            <a href="https://github.com/IEEEE-0" class="link mono" target="_blank" rel="noopener">github.com/IEEEE-0</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-logo mono">IEEEE</p>
+        <p class="footer-legal">Institute of Embarrassing Engineering Experiments and Essays. Content under open licenses where applicable.</p>
+        <p class="footer-copy mono">© 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
